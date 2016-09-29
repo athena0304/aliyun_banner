@@ -1,0 +1,65 @@
+.wrapper{
+    background: #24282C;
+    
+}
+.layer {
+	position: absolute;
+  animation: re-banner-slide-40 0.8s cubic-bezier(0.4, 0, 0.2, 1) 0s 1;
+}
+.layer img {
+	width: 800px;
+}
+.banner-row {
+	height: 560px;
+}
+.banner-row{
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-out;
+    animation: lalala 10s ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes  myfirst
+{
+0%   {background: red;}
+25%  {background: yellow;}
+50%  {background: blue;}
+100% {background: green;}
+}
+
+@keyframes  lalala
+{
+0%   {transform: rotateX(0deg) rotateY(0deg);}
+25%  {transform: rotateX(-5.07242deg) rotateY(5deg);}
+50%  {transform: rotateX(0.07242deg) rotateY(0deg);}
+75%  {transform: rotateX(5.07242deg) rotateY(-5deg);}
+100% {transform: rotateX(0.2265deg) rotateY(0deg);}
+}
+
+/*
+@keyframes  lalala
+{
+0%   {transform: rotateX(-1deg) rotateY(0deg);}
+25%  {transform: transform: rotateX(-30.07242deg) rotateY(30deg);;}
+50%  {transform: transform: rotateX(-60.07242deg) rotateY(60deg);}
+100% {transform: rotateX(-90.2265deg) rotateY(90deg);}
+}
+*/
+
+@keyframes re-banner-slide-40{ 
+    0%{
+        opacity:0;
+        -webkit-transform: translate3d(0, 40px, 0);
+        -moz-transform: translate3d(0, 40px, 0);
+        -ms-transform: translate3d(0, 40px, 0);
+        transform: translate3d(0, 40px, 0);
+    }
+    100%{ 
+        opacity:1;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
