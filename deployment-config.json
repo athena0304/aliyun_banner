@@ -1,0 +1,9 @@
+{
+    "type": "sftp",
+    "host": "115.28.83.105",
+    "username": "ouxuewen",
+    "password": "Ouxuewen2",
+    "port": 22,
+    "remotePath": "/home/ouxuewen/workspace/aliyun_banner",
+    "uploadOnSave": true
+}
